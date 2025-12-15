@@ -4,35 +4,76 @@
   <meta charset="UTF-8">
   <title>Plasma Tech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #1a0033, #000000);
+      background: linear-gradient(135deg, #3a0ca3, #000814, #ff006e);
       color: white;
     }
 
     header {
-      padding: 30px;
-      text-align: center;
-      font-size: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 40px;
+    }
+
+    header h1 {
+      font-size: 26px;
       letter-spacing: 4px;
-      font-weight: bold;
     }
 
-    section {
-      padding: 80px 30px;
-      text-align: center;
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 14px;
     }
 
-    section h2 {
-      font-size: 42px;
+    nav a:hover {
+      color: #ffbe0b;
+    }
+
+    .hero {
+      padding: 120px 40px;
+      max-width: 900px;
+    }
+
+    .hero h2 {
+      font-size: 52px;
       margin-bottom: 20px;
     }
 
-    section p {
+    .hero p {
       font-size: 18px;
-      color: #cccccc;
+      color: #dddddd;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      padding: 80px 40px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 25px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #ffbe0b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 14px;
+      color: #ccc;
     }
   </style>
 </head>
@@ -40,16 +81,41 @@
 <body>
 
 <header>
-  PLASMA TECH
+  <h1>PLASMA TECH</h1>
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">Robotique</a>
+    <a href="#">Projets</a>
+    <a href="#">Contact</a>
+  </nav>
 </header>
 
-<section>
+<div class="hero">
   <h2>Ingénierie Robotique & Aéronautique</h2>
   <p>
-    Conception de systèmes robotiques, électromécaniques
-    et aéronautiques innovants.
+    Innovation, performance et technologies avancées
+    au service de la robotique et de l’aéronautique.
   </p>
-</section>
+</div>
+
+<div class="cards">
+  <div class="card">
+    <h3>Robotique</h3>
+    <p>Robots autonomes, bras robotiques, systèmes intelligents.</p>
+  </div>
+  <div class="card">
+    <h3>Électromécanique</h3>
+    <p>Conception mécanique et électronique intégrée.</p>
+  </div>
+  <div class="card">
+    <h3>Aéronautique</h3>
+    <p>Drones, systèmes embarqués et innovation aérienne.</p>
+  </div>
+</div>
+
+<footer>
+  © 2025 Plasma Tech
+</footer>
 
 </body>
 </html>

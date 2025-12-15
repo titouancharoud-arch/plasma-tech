@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Plasma Tech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
@@ -20,9 +21,14 @@
       background: rgba(0,0,0,0.7);
     }
 
-    header h1 {
-      font-size: 22px;
-      letter-spacing: 2px;
+    .logo {
+      font-size: 24px;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ff2fd2;
     }
 
     nav a {
@@ -49,55 +55,20 @@
     .hero p {
       font-size: 18px;
       color: #cccccc;
-      max-width: 700px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 35px;
-      background: linear-gradient(90deg, #ff7a18, #ff2fd2);
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 80px 40px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.08);
-      padding: 25px;
-      border-radius: 20px;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #ff7a18;
     }
 
     footer {
       text-align: center;
       padding: 40px;
-      font-size: 14px;
       color: #888;
-      background: #050507;
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>PLASMA TECH</h1>
+  <div class="logo">PLASMA <span>TECH</span></div>
   <nav>
     <a href="#">Accueil</a>
     <a href="#">Robotique</a>
@@ -109,32 +80,13 @@
 <div class="hero">
   <h2>Ingénierie Robotique & Aéronautique</h2>
   <p>
-    Plasma Tech conçoit des solutions robotiques, électromécaniques
-    et aéronautiques orientées innovation et performance.
+    Plasma Tech développe des solutions robotiques,
+    électromécaniques et aéronautiques modernes.
   </p>
-  <a class="button" href="#">Découvrir nos projets</a>
 </div>
 
-<section>
-  <h2>Nos expertises</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Robotique autonome</h3>
-      <p>Développement de systèmes intelligents et automatisés.</p>
-    </div>
-    <div class="card">
-      <h3>Électromécanique</h3>
-      <p>Intégration mécanique et électronique avancée.</p>
-    </div>
-    <div class="card">
-      <h3>Aéronautique & drones</h3>
-      <p>Conception de technologies aériennes modernes.</p>
-    </div>
-  </div>
-</section>
-
 <footer>
-  © 2025 Plasma Tech — Tous droits réservés
+  © 2025 Plasma Tech
 </footer>
 
 </body>
